@@ -27,6 +27,7 @@ a {
 .container {                        /* contains logo and navBar, has specific width [px]! */
     width: 1352px;
     margin: 0 auto;
+    height: ;
 }
 /* header has to be 100% of screen width it means = 100wh */
 
