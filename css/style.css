@@ -4,12 +4,12 @@
     --color-redish: #fb3b64;
     --color-green: #55dfb4;
     --color-black: #000000;
-    --color-white: #ffffff;
     --color-grey: #a5a5a5;
     --color-light-grey: #f7f7f7;
-    --button-radius: 35px;
+    --color-white: #ffffff;
     --font-raleway: "Raleway", sans-serif;
     --font-open-sans: "Open Sans", sans-serif;
+    --button-radius: 35px;
 }
 * {
     box-sizing: border-box;
