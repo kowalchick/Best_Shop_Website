@@ -112,7 +112,6 @@ header {
     border: none;
     border-radius: var(--button-radius);
     display: inline-flex;                             /* inline-block important for button */
-
 }
 .btn-big {
     background-color: var(--color-primary);
@@ -125,7 +124,69 @@ header {
     transition: 200ms;
 
 }
+/* statistics section */
 
-
-
-
+.statistic-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    margin: 100px auto;
+}
+.statistic-title {
+    text-align: center;
+    font-family: var(--font-raleway);
+    color: var(--color-black);
+    font-size: 2.25rem;
+}
+.statistics {
+    margin: 100px 0;
+}
+.statistics-column {
+    max-width: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.statistic-circle {
+    border-radius: 50%;
+    height: 62px;
+    width: 62px;
+    position: relative;
+}
+.sts-img {
+    position: absolute;
+}
+.statistic-number {
+    color: var(--color-black);
+    font-family: var(--font-raleway);
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: .3750em;                        /* defoult font size is 16px. In project there is 6px of letter spacing for this number */
+    margin: 15px 0;
+    line-height: 24px;
+}
+.statistic-txt {
+    color: var(--color-grey);
+    font-family: var(--font-raleway);
+    line-height: 19px;
+}
+.statistics-column:nth-child(1) .statistic-circle {          /* i choice a circle in the 1st of 3 available classes .statistics-column */
+    background-color: var(--color-redish);
+}
+.statistics-column:nth-child(2) .statistic-circle {
+    background-color: var(--color-primary);
+}
+.statistics-column:nth-child(2) .sts-img {               /* i choice an image in the 2nd of .statistics-column */
+    position: absolute;
+    top: 10px;
+}
+.statistics-column:nth-child(3) .statistic-circle {
+    background-color: var(--color-green);
+}
+.statistics-column:nth-child(3) .sts-img {
+    position: absolute;
+    top: 7px;
+}
