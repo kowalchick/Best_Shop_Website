@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #08a6e4;
+    --color-primary: #08A6E4;
     --color-primary-shadow: rgba(7, 172, 230, 0.16);
     --color-redish: #fb3b64;
     --color-green: #55dfb4;
@@ -29,13 +29,14 @@ a {
     margin: 0 auto;
 
 }
-/* Header */ /* header has to be 100% of screen width => it means = 100% */
+/* HEADER */                        /* header has to be 100% of screen width => it means = 100% */
 
 .logo {
     font-size: 2em;
     color: var(--color-primary);
     font-family: var(--font-raleway);
     font-weight: normal;
+    padding-left: 50px;
 }
 
 header {
@@ -60,7 +61,7 @@ header {
     text-transform: uppercase;
     letter-spacing: .6rem;                      /* default is 2px */
     padding: 28px 20px 20px;
-    border-bottom: transparent 4px solid;       /* bottom bar added with a  border (border-bottom) */
+    border-bottom: transparent 4px solid;       /* bottom bar added with a border (border-bottom) */
     font-weight: bold;
 }
 .navBar-link:link {
@@ -71,13 +72,59 @@ header {
 }
 .navBar-link:hover {
     color: var(--color-black);
-    border-color: var(--color-primary);
+    border-color: var(--color-primary);        /* border (border-bottom) after 'hover' action changes color to blue */
 }
 .navBar-link:active {
     color: var(--color-primary);
     border-color: var(--color-primary);
 }
 
+/* MAIN */
+
+/* Opening section */
+
+.opening-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.opening-container {
+    text-align: center;
+    margin-top: 120px;
+}
+.opening-header {
+    font-family: var(--font-raleway);
+    font-weight: normal;
+    font-size: 3.0652rem;
+}
+.opening-txt {
+    margin: 35px 0 45px 0;
+}
+.opening-img {
+    max-width: 1735px;
+    width: 100%;
+}
+/* Button */
+
+.btn {
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button-radius);
+    display: inline-flex;                             /* inline-block important for button */
+
+}
+.btn-big {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    padding: 15px 100px;
+}
+.btn-big:hover {
+    background-color: var(--color-redish);
+    transition: 200ms;
+
+}
 
 
 
