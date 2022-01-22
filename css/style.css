@@ -111,7 +111,7 @@ header {
     font-weight: bold;
     border: none;
     border-radius: var(--button-radius);
-    display: inline-flex;                             /* inline-block important for button */
+    display: inline-flex;                             /* inline-block or inline-flex is important for a button */
 }
 .btn-big {
     background-color: var(--color-primary);
@@ -164,7 +164,7 @@ header {
     font-family: var(--font-raleway);
     font-weight: 800;
     font-size: 1.25rem;
-    letter-spacing: .3750em;                        /* defoult font size is 16px. In project there is 6px of letter spacing for this number */
+    letter-spacing: .3750em;                        /* default font size is 16px. In project there is 6px of letter spacing for this number */
     margin: 15px 0;
     line-height: 24px;
 }
@@ -173,13 +173,13 @@ header {
     font-family: var(--font-raleway);
     line-height: 19px;
 }
-.statistics-column:nth-child(1) .statistic-circle {          /* i choice a circle in the 1st of 3 available classes .statistics-column */
+.statistics-column:nth-child(1) .statistic-circle {          /* i choiced a circle in the 1st of 3 available classes .statistics-column */
     background-color: var(--color-redish);
 }
 .statistics-column:nth-child(2) .statistic-circle {
     background-color: var(--color-primary);
 }
-.statistics-column:nth-child(2) .sts-img {               /* i choice an image in the 2nd of .statistics-column */
+.statistics-column:nth-child(2) .sts-img {               /* i choiced an image in the 2nd of 3 available .statistics-column */
     position: absolute;
     top: 10px;
 }
@@ -189,4 +189,13 @@ header {
 .statistics-column:nth-child(3) .sts-img {
     position: absolute;
     top: 7px;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    box-shadow: inset 0 5px 40px var(----color-light-grey);
 }
