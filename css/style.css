@@ -27,9 +27,57 @@ a {
 .container {                        /* contains logo and navBar, has specific width [px]! */
     width: 1352px;
     margin: 0 auto;
-    height: ;
+
 }
-/* header has to be 100% of screen width it means = 100wh */
+/* Header */ /* header has to be 100% of screen width => it means = 100% */
+
+.logo {
+    font-size: 2em;
+    color: var(--color-primary);
+    font-family: var(--font-raleway);
+    font-weight: normal;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 3px 6px #00000029;
+}
+.header-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-navBar {
+    display: flex;
+}
+.navBar-element {
+    padding: 0 30px;
+}
+.navBar-link {
+    font-size: .6875em;
+    text-transform: uppercase;
+    letter-spacing: .6rem;                      /* default is 2px */
+    padding: 28px 20px 20px;
+    border-bottom: transparent 4px solid;       /* bottom bar added with a  border (border-bottom) */
+    font-weight: bold;
+}
+.navBar-link:link {
+    color: var(--color-grey);
+}
+.navBar-link:visited {
+    color: var(--color-grey);
+}
+.navBar-link:hover {
+    color: var(--color-black);
+    border-color: var(--color-primary);
+}
+.navBar-link:active {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
 
 
 
