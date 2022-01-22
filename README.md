@@ -1,7 +1,6 @@
 
 # Hi people!
 
-This site was built using [GitHub Pages](https://pages.github.com/).
 Link to demo of this site is [here](https://kowalchick.github.io/Workshop1_website)
 
 ## Short Description of my work
