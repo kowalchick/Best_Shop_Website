@@ -20,6 +20,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--color-white);
 }
 
 /* General Settings */
@@ -111,7 +112,7 @@ header {
     font-weight: bold;
     border: none;
     border-radius: var(--button-radius);
-    display: inline-flex;                             /* inline-block or inline-flex is important for a button */
+    display: inline-block;                             /* inline-block or inline-flex is important for a button */
 }
 .btn-big {
     background-color: var(--color-primary);
@@ -310,11 +311,111 @@ header {
     margin: 30px 70px;
     position: relative;
 }
+/* Pricing section */
+
+.pricing {
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.pricing h2 {
+    font-size: 2.25em;
+    line-height: 2.625em;
+    font-family: var(--font-raleway);
+ }
+.pricing-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 
 
 
+}
+.pricing-box {
+    width: 372px;
+    height: 461px;
+    border: 1px solid var(--box-color);
+    box-shadow: 5px 10px 27px #07ACE629;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 
+}
+.pricing-basic {
+    --box-color: var(--color-redish);
+}
+.pricing-professional{
+    --box-color: var(--color-primary);
+    height: 500px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.pricing-premium {
+    --box-color: var(--color-green);
+}
+.pricing-box-title {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+.pricing-type {
+    font-family: var(--font-raleway);
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.pricing-price {
+    font-family: var(--font-open-sans);
+    font-size: 2.875em;
+    color: var(--box-color);
+    margin: 15px auto;
+}
+.pricing-limit{
+    font-size: .75em;
+    font-family: var(--font-raleway);
+    font-weight: bold;
+    text-align: center;
+}
+.pricing-elements {
+    text-align: center;
+}
+.pricing-element {
+    font-size: .875em;
+    font-family: var(--font-open-sans);
+    line-height: 2.563em;
+}
+.pricing-element::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-image: url("../images/Ckechmark-1.svg");
+    display: inline-block;
+    margin-right: 7px;
+}
+.not-pricing-element::before {
+    background-image: url("../images/Close.svg");
+}
+            /* buttons */
 
+.pricing-box .btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    position: relative;
+    bottom: -25px;
+    font-size: 0.8125rem;
+    background-color: var(--box-color);
+    display: inline-block;
+    line-height: 3.6em;
+    text-align: center;
+    margin-top: auto;                     /* how it may be possile ? */
+}
 
     /* Footer */
 footer {
