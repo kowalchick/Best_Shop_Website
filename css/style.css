@@ -332,8 +332,6 @@ header {
     align-items: center;
     margin-top: 50px;
 
-
-
 }
 .pricing-box {
     width: 372px;
@@ -362,7 +360,7 @@ header {
 }
 .pricing-box-title {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 70px;
     margin-bottom: 70px;
 }
 .pricing-type {
