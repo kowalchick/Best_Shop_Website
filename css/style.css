@@ -190,12 +190,133 @@ header {
     position: absolute;
     top: 7px;
 }
+/* benefits section */
+
+.benefits {
+    background-color: var(--color-light-grey);
+
+}
+.benefits-container {
+    padding: 105px 100px;
+
+}
+.benefit1 {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-grey);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+
+
+}
+.benefit-txt-section {
+    text-align: left;
+    max-width: 416px;
+    box-sizing: content-box;
+    margin: 90px 35px;
+}
+.benefit-txt {
+    font-family: var(--font-open-sans);
+    line-height: 1.375em;
+    margin-top: 30px;
+}
+.benefit-title {
+    font-family: var(--font-raleway);
+    font-size: 2.25em;
+
+}
+.benefit-txt::after {                             /* create pseudoelement after the text */
+    content:"";
+    width: 328px;
+    height: 4px;
+    background-color: var(--pseudoel-color);      /* create general variable for the color of this pseudoelement */
+    display: block;
+    margin-top: 50px;
+}
+.benefit-comp {
+    --pseudoel-color: var(--color-redish);       /* assign the value of color to the first column - I use the hoisting and casscading feature*/
+
+}
+.benefit-phone {
+    --pseudoel-color: var(--color-primary);
+    flex-direction: row-reverse;
+}
+.benefit-col {
+    --pseudoel-color: var(--color-green);
+    max-width: 700px;
+}
+.benefit-txt-section {
+    max-width: none;
+}
+.benefit2 {
+    display: flex;
+}
+.benefit-orange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-green);
+    margin-left: 40px;
+    flex:1;
+}
+.benefit-orange img {
+    width: 300px;
+    padding-top: 30px;
+}
+/* Benefit section - pseudoelements background for images */
+        /* computer image pseudoelement */
+.benefit-comp .benefit-img::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    background-color: var(--color-redish);
+    border-radius: 40px;
+    transform: rotate(45deg);
+    right: 0;
+    top: -50px;
+}
+.benefit-comp .benefit-img {
+    margin: 0 110px 40px 0;
+    position: relative;
+}
+.benefit-comp .benefit-img img {
+    width: 386px;
+    position: relative;
+}
+.benefit-img img {
+    position: relative;
+    z-index: 1;
+}
+        /* phone pseudoelement */
+
+.benefit-phone .benefit-img::before {
+    content: "";
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    left: 0;
+    top: -20px;
+}
+.benefit-phone .benefit-img img {
+    width: 426px;
+    padding: 20px;
+}
+.benefit-phone .benefit-img {
+    margin: 30px 70px;
+    position: relative;
+}
 
 
 
 
 
-/* Footer */
+
+    /* Footer */
 footer {
     box-shadow: 0 -5px 40px #00000029;
     background-color: var(--color-light-grey);
