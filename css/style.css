@@ -405,14 +405,19 @@ header {
     width: 150px;
     height: 50px;
     border-radius: 23px;
-    position: relative;
-    bottom: -25px;
+    position: absolute;
     font-size: 0.8125rem;
     background-color: var(--box-color);
     display: inline-block;
     line-height: 3.6em;
     text-align: center;
-    margin-top: auto;                     /* how it may be possile ? */
+    bottom: 0;
+    transform: translateY(50%);                    /* how it may be possile ? */
+}
+.pricing-box .btn:hover {
+    background-color: #ffc900;
+    transition: 200ms;
+
 }
 
     /* Footer */
