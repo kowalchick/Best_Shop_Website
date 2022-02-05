@@ -1,7 +1,7 @@
 
 # Hi people!
 
-Link to demo of this site is [here](https://kowalchick.github.io/Workshop1_website)
+Link to demo of this site is [here](https://kowalchick.github.io/Best_Shop_Website/)
 
 ## Short Description of my work
 
